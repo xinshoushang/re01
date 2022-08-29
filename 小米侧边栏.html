@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>侧边栏</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            /* 背景平铺 默认平铺 可以设置往哪个方向平铺 */
+            /* background-position: x y; 背景图片的位置 x,y 可以使用方位名词或者精确单位 
+              如果只指定了一个方位名词，另一个默认垂直居中*/
+              /* background-attachment 设置背景图像是否固定或者随页面滚动 
+               fixed 背景图像固定 scroll 滚动，默认是滚动的*/
+               /* 背景的五个属性可以合并写在background  */
+               /* 背景颜色半透明 */
+            background-image: url(1.jpeg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* background-attachment: fixed; */
+            /* background-color: #55585a;  */
+            /* background: #55585a url(1.jpeg) no-repeat fixed center; */
+            background: rgba(0, 0, 0, 0.6);
+            height: 250px;
+            width: 230px;
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+            height: 40px;
+            width: 200px;
+            background-color: #55585a;
+            color: #fff;
+            font-size: 14px;
+            font-family: '微软雅黑';
+            /* text-indent: 2em; */
+            padding-left: 30px;
+            line-height: 40px;
+        }
+
+        a:hover {
+            background-color: #ff6700;
+        }
+
+        h3 {
+            padding-top: 0px;
+            width: 118px;
+            height: 40px;
+            background-color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 40px;
+            background-image: url(2.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            text-indent: 1.5em;
+        }
+
+        body {
+            background-position: center 40px;
+            background-image: url(3.jpg);
+        }
+    </style>
+    <!-- background-color 背景颜色 属性 transparent 默认透明 -->
+    <!-- background-image 背景图片 优点，非常便于控制位置  同时添加时背景图片会压住背景颜色-->
+</head>
+
+<body>
+    <h3>成长守护平台</h3>
+    <div>
+    <a href="#">手机 电话卡</a>
+    <a href="#">电视 盒子</a>
+    <a href="#">笔记本 平板</a>
+    <a href="#">出行 穿戴</a>
+    <a href="#">智能 路由器</a>
+    <a href="#">健康 儿童</a>
+    <a href="外边距.html">外边距</a>
+</div>
+</body>
+
+</html>
